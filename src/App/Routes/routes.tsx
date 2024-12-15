@@ -1,4 +1,5 @@
 import Home from "../../Page/Home";
+import NotFound from "../../Page/NotFound";
 import ViewProductModal from "../../Widgets/Modal/ViewProductModal";
 
 const routes = [
@@ -12,7 +13,7 @@ const routes = [
   },
   {
     path: '*',
-    element: <div>404</div>,
+    element: <NotFound />,
   },
 ]
 
