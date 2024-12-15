@@ -1,0 +1,9 @@
+.button {
+  @apply absolute -right-[30px] -top-[30px] w-[50px] h-[50px] flex items-center justify-center;
+}
+
+@media screen and (max-width:420px) {
+  .button {
+    @apply -top-[20px] -right-[20px];
+  }
+}

@@ -1,0 +1,49 @@
+/* Стиль для контейнера */
+.title {
+  @apply mb-[10px];
+}
+
+.genders {
+  @apply flex justify-between mb-[20px];
+}
+
+/* Стили для метки */
+.custom__checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Стили для самих чекбоксов */
+.checkbox {
+  display: none;
+}
+
+/* Стили для кастомной галочки */
+.checkmark {
+  @apply w-[20px] h-[20px] border-[2px] border-brown rounded-[4px] relative mr-[10px] cursor-pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Когда чекбокс выбран, меняем цвет фона и бордер */
+.checkbox:checked + .checkmark {
+  @apply border-brown;
+}
+
+/* Галочка внутри чекбокса */
+.checkbox:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  @apply border-brown;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Когда чекбокс не выбран */
+.checkbox:not(:checked) + .checkmark {
+  @apply bg-transparent;
+}

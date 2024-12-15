@@ -1,0 +1,149 @@
+.container {
+  @apply flex flex-wrap gap-[20px] relative; 
+}
+
+
+.wrapper__one {
+  @apply flex flex-wrap justify-center gap-[20px];
+}
+
+.wrapper__two {
+  @apply flex gap-[20px] w-full;
+}
+
+.modal {
+  @apply px-[40px];
+  padding-right: 15px !important;
+}
+
+.img__wrapper {
+  @apply w-[540px] mb-[60px] !important;
+}
+
+.img {
+  @apply w-full h-full object-cover;
+} 
+
+.desc_text__wrapper {
+  @apply max-w-[430px] w-full overflow-hidden;
+}
+
+.desc__title {
+  @apply mb-[25px] text-[24px] !important;
+}
+
+.general__inf {
+  @apply flex gap-x-[50px] gap-y-[10px] mb-[40px] !important;
+}
+
+.article {
+  @apply text-gray-light text-nowrap;
+}
+
+.quantity {
+  @apply text-gray-light text-nowrap;
+}
+
+.quantity span {
+  @apply text-gray;
+}
+
+.title {
+  @apply text-[24px] mb-[23px] !important;
+}
+
+.stars {
+  @apply flex gap-[5px] mb-[40px];
+}
+
+.sizes {
+  @apply flex max-w-[550px] w-full flex-wrap gap-[25px] mb-[60px];
+}
+
+.sizes__title {
+  @apply mb-[5px] scale-100 transition-all !important;
+}
+
+.size {
+  @apply w-[70px] h-[30px] flex justify-center items-center border border-gray-light rounded-[4px] cursor-pointer transition-colors;
+}
+
+.size__selected {
+  @apply border-red text-red;
+}
+
+.price__wrapper {
+  @apply flex items-center gap-[25px] mb-[70px];
+}
+
+.price__discount {
+  @apply text-[30px] font-bold;
+}
+
+.price {
+  @apply text-gray-light;
+}
+
+.advantages {
+  @apply flex flex-col gap-[8px] mb-[50px];
+}
+
+.advantage {
+  @apply flex items-center gap-[10px];
+}
+
+
+.advantage__text {
+  @apply text-gray-light text-[14px];
+}
+
+.characteristic__title {
+  @apply text-[24px] mb-[25px] !important;
+}
+
+.characteristic__list {
+  @apply flex flex-col gap-[10px];
+}
+
+.desc {
+  @apply max-w-[540px] w-full;
+}
+
+@media screen and (max-width:1225px) {
+  .general__inf {
+    @apply absolute left-0 top-0;
+  }
+
+  .img__wrapper {
+    @apply max-w-[700px] w-full !important;
+  }
+
+  .wrapper__one {
+    @apply mt-[40px];
+  }
+
+  .wrapper__two {
+    @apply justify-center gap-[70px];
+  }
+}
+
+
+@media screen and (max-width:560px) {
+
+  .wrapper__two {
+    @apply justify-start flex-wrap gap-[40px];
+  }
+}
+
+@media screen and (max-width:420px) {
+  .general__inf {
+    @apply flex-wrap;
+  }
+
+  .wrapper__one {
+    @apply mt-[70px];
+  }
+}
+
+
+

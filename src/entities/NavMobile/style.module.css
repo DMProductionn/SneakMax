@@ -1,0 +1,23 @@
+.wrapper {
+  @apply bg-red w-[500px] z-[99] min-h-[550px] h-full absolute -left-[500px] top-0 transition-all;
+}
+
+.link {
+  font-family: 'Intro-Book', sans-serif;
+}
+
+.wrapper.active {
+  @apply left-0;
+}
+
+.nav__mobile {
+  @apply flex flex-col absolute top-[60px] py-[20px] left-[15px] gap-[40px];
+}
+
+.nav__mobile .link {
+  @apply text-[#ffff] text-[20px] relative z-[999];
+}
+
+.cart__item {
+  @apply flex items-center gap-[10px] relative;
+}

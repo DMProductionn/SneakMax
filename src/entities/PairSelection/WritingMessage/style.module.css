@@ -1,0 +1,19 @@
+.wrapper {
+  @apply opacity-0 transition-opacity mb-[120px];
+}
+
+.wrapper.active {
+  @apply opacity-100;
+}
+
+.title {
+  @apply text-gray text-[24px] my-[20px] !important;
+}
+
+.textarea {
+  @apply outline-none resize-none bg-[#fff] max-w-[465px] w-full h-[245px] p-[20px];
+}
+
+.textarea::placeholder {
+  @apply text-brown;
+}

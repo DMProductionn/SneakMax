@@ -1,0 +1,16 @@
+.modal-content {
+  @apply rounded-none p-[40px];
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 580px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal-content {
+    padding: 20px;
+  }
+}

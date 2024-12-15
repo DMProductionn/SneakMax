@@ -1,0 +1,9 @@
+.wrapper {
+  @apply border-b border-brown pb-[25px] mb-[25px];
+}
+
+.title {
+  @apply text-gray text-[30px] mb-[25px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+

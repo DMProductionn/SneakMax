@@ -1,0 +1,7 @@
+.cart__count {
+  @apply w-[16px] h-[16px] rounded-[50%] bg-red absolute left-[10px] top-[11px] flex justify-center items-center;
+}
+
+.count {
+  @apply text-[14px] text-[#fff];
+}

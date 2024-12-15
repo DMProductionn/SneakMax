@@ -1,0 +1,46 @@
+
+.section {
+  @apply bg-purple w-full h-auto relative;
+}
+
+.big__title {
+  @apply absolute z-[1] font-bold text-[#fff] opacity-[0.12] top-[50%] left-[50%] text-[200px] translate-x-[-50%] translate-y-[-50%] px-[15px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.wrapper {
+  @apply bg-purple max-w-[1210px] w-full min-h-[465px] mx-auto py-[100px] text-[#fff] px-[15px];
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.title {
+  @apply text-[36px] mb-[20px];
+  font-family: 'Intro-Regular', sans-serif;
+}
+
+.text {
+  @apply mb-[50px] !important;
+  font-family: 'Intro-Book', sans-serif;
+}
+
+.button {
+  @apply bg-red max-w-[250px] relative z-[1] w-full h-[60px] transition-colors rounded-[4px] flex justify-center items-center;
+  font-family: 'Intro-Regular', sans-serif;
+}
+
+.button:hover {
+  @apply bg-[#CC4949];
+}
+
+@media screen and (max-width: 1020px) {
+  .big__title {
+    @apply text-[150px];
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .big__title {
+    @apply hidden;
+  }
+}

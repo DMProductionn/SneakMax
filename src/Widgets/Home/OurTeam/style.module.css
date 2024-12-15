@@ -1,0 +1,31 @@
+.section {
+  @apply relative;
+}
+
+.container {
+  @apply  w-full h-auto bg-purple relative;
+}
+
+.elem {
+  @apply absolute right-0 top-0 z-[1];
+}
+
+.title {
+  @apply text-[#fff] mb-[40px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.wrapper {
+  @apply max-w-[1210px] py-[60px] px-[15px] w-full mx-auto relative z-[1];
+}
+
+.team {
+  @apply flex flex-wrap w-full justify-center;
+  gap: 40px 20px;
+}
+
+@media screen and (max-width: 1210px) {
+  .title {
+    @apply text-center;
+  }
+}

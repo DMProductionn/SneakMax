@@ -1,0 +1,23 @@
+.product {
+  @apply flex justify-between gap-[10px] items-center h-[80px] py-[20px] transition-colors;
+}
+
+.product__wrapper {
+  @apply flex items-center gap-[10px];
+}
+
+.img__wrapper {
+  @apply w-[80px] h-auto;
+}
+
+.img {
+  @apply w-[80px] h-full object-cover;
+}
+
+.title {
+  @apply max-w-[290px] text-[14px] text-gray;
+}
+
+.price {
+  @apply text-gray font-bold;
+}

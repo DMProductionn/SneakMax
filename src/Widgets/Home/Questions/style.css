@@ -1,0 +1,66 @@
+
+
+.section-qustions {
+  @apply px-[15px];
+}
+
+.title-qustions {
+  @apply text-[30px] font-bold mb-[40px] !important;
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.accordion__wrapper {
+  @apply max-w-[880px] w-full mx-auto;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+.accordion-item {
+  border: none !important;
+  border-radius: 0px !important;
+  border-top: 1px solid #242424 !important;
+  border-bottom: 1px solid #242424 !important;
+}
+
+.accordion-item:first-child {
+  border-bottom: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Убираем стандартную стрелку Bootstrap */
+.accordion-button::after {
+  display: none;
+}
+
+/* Добавляем собственную стрелку */
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #242424 !important;
+  font-size: 20px !important;
+  padding: 30px 0px !important;
+}
+
+.icon-qustions {
+  transition: transform 0.3s ease;
+}
+
+/* Пример: можно добавить анимацию вращения для раскрывающейся стрелки */
+.accordion-button:not(.collapsed) .icon-qustions {
+  transform: rotate(225deg);
+}
+
+.accordion-body {
+  opacity: 50%;
+  color: #242424 !important;
+  font-size: 16px !important;
+  padding: 0 0 20px 0 !important;
+}
+

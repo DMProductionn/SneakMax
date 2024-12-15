@@ -1,0 +1,27 @@
+.slider {
+  @apply w-[240px] mx-auto mb-[20px];
+}
+
+.values {
+  @apply mt-[10px] flex justify-center items-center border-[1px] border-[#B2B5BB] rounded-t-[4px] h-[50px];
+}
+
+.values p {
+  font-family: 'Intro-Book';
+}
+
+.values__line {
+  @apply w-[1px] h-[35px] bg-[#B2B5BB] absolute;
+}
+
+.value__wrapper {
+  @apply w-[140px] text-center;
+}
+
+.track {
+  @apply h-[4px] w-full bg-gray;
+}
+
+.thumb {
+  @apply h-[20px] w-[6px] rounded-[4px] bg-gray flex items-center justify-center;
+}

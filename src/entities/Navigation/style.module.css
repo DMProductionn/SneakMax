@@ -1,0 +1,47 @@
+
+
+.list {
+  @apply flex flex-wrap gap-x-[40px] gap-y-[20px] justify-center;
+}
+
+.link {
+  @apply cursor-pointer text-[14px];
+  font-family: 'Intro-Book', sans-serif;
+}
+
+.list .link {
+  @apply text-[#ffff] relative;
+}
+
+.list .link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.list .link:hover::after {
+  transform: scaleX(1);
+}
+
+
+.cart__item {
+  @apply flex items-center gap-[10px] relative;
+}
+
+@media only screen and (max-width: 1057px) {
+  .header__nav {
+    @apply hidden;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .footer__nav {
+    @apply w-full;
+  }
+}

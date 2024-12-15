@@ -1,0 +1,7 @@
+.button {
+  @apply max-w-[220px] bg-red w-full h-[60px] rounded-[4px] transition-colors text-[#fff] mt-[30px];
+}
+
+.button:hover {
+  @apply bg-[#CC4949];
+}

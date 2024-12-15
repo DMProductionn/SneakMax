@@ -1,0 +1,7 @@
+.button {
+  @apply w-[240px] h-[60px] bg-gray text-[#fff] rounded-[4px] transition-colors;
+}
+
+.button:hover {
+  @apply bg-[#31343C]
+}

@@ -1,0 +1,30 @@
+.container {
+  @apply flex gap-[20px];
+}
+
+.wrapper {
+  @apply flex flex-col gap-[40px] w-full;
+}
+
+.wrapper__products {
+  @apply flex flex-wrap gap-[20px];
+}
+
+.title {
+  @apply mb-[40px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.button__wrapper {
+  @apply flex justify-center;
+}
+
+@media screen and (max-width: 910px) {
+  .wrapper__products {
+    @apply justify-center;
+  }
+
+  .title {
+    @apply mb-[20px] text-center;
+  }
+}

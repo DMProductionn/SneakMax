@@ -1,0 +1,16 @@
+.button {
+  @apply bg-gray w-[80px] h-[80px] flex justify-center items-center rounded-[50%] scale-100 transition-all;
+}
+
+.button.active {
+  @apply bg-red scale-125;
+}
+
+.button:hover {
+  @apply bg-[#31343C];
+}
+
+.button.active:hover {
+  @apply bg-red;
+}
+

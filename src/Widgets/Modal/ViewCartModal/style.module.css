@@ -1,0 +1,54 @@
+.modal {
+  @apply absolute z-[999] right-[15px] top-[64px] bg-[#fff] max-h-[415px] max-w-[480px] w-full pr-[5px];
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.products {
+  @apply max-h-[325px] overflow-auto flex flex-col;
+}
+
+.loader__wrapper {
+  @apply h-[325px] flex justify-center items-center;
+}
+
+.products::-webkit-scrollbar {
+  width: 4px;               
+}
+
+.products::-webkit-scrollbar-track {
+  background: rgba(77, 77, 77, 0.2);
+  border-radius: 5px; 
+  margin: 20px 0px;
+}
+
+.products::-webkit-scrollbar-thumb {
+  background-color: #fff;   
+  border-radius: 5px;       
+  border: 3px solid rgba(77, 77, 77, 0.4);  
+}
+
+.total__block {
+  @apply flex justify-between items-center w-full p-[20px];
+  box-shadow: 0 -4px 10px 0 rgba(0, 13, 84, 0.1);
+}
+
+.total__text {
+  @apply text-[14px];
+}
+
+.total__sum {
+  @apply text-[20px] font-bold;
+}
+
+@media screen and (max-width: 500px) {
+  .modal {
+    @apply left-0;
+  }
+}

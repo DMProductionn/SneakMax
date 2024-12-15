@@ -1,0 +1,62 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  @apply text-gray text-[16px] h-full;
+  font-family: 'Intro-Book', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Intro-Regular', sans-serif !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+section {
+  @apply mb-[60px];
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}

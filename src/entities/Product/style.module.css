@@ -1,0 +1,41 @@
+.wrapper {
+  @apply relative;
+}
+
+.wrapper:hover .overlay{
+  @apply opacity-100;
+}
+
+.product {
+  @apply w-[280px] h-[290px] rounded-[4px] overflow-auto cursor-pointer;
+}
+
+.product:hover .overlay{
+  @apply flex;
+}
+
+.product__img {
+  @apply w-full h-full object-cover;
+}
+
+.overlay {
+  @apply opacity-0 absolute left-0 top-0 w-full h-full transition-opacity;
+}
+
+.bg {
+  @apply bg-[#fff] w-full h-full opacity-[60%];
+}
+
+.buttons {
+  @apply flex gap-[40px] absolute top-[50%] px-[40px];
+  transform: translateY(-50%);
+}
+
+.product__title {
+  @apply mt-[5px];
+}
+
+.product__price {
+  @apply text-[20px];
+  font-family: 'Intro-Regular', sans-serif;
+}

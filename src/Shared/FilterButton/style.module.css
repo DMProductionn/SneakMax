@@ -1,0 +1,10 @@
+
+.button {
+  @apply mb-[20px] bg-gray w-[150px] h-[40px] text-[#fff] rounded-[4px] hidden items-center justify-center;
+}
+
+@media screen and (max-width: 910px) {
+  .button {
+    @apply flex;
+  }
+}

@@ -1,0 +1,71 @@
+.section {
+  @apply bg-[#F3F6F6];
+}
+
+.container {
+  @apply max-w-[1210px] w-full mx-auto py-[60px];
+}
+
+.title {
+  @apply mb-[60px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.sub__container {
+  @apply flex flex-wrap gap-[40px] justify-between px-[15px];
+}
+
+.question__wrapper {
+  @apply flex gap-[10px] relative;
+}
+
+.answer__wrapper {
+  @apply absolute hidden bg-transparent w-[430px] h-[100px] -top-[100px] -right-[227px] px-[20px] py-[10px];
+  background-image: url('../../../../src/App/img/Message.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.answer {
+  @apply text-[14px];
+}
+
+.question {
+  @apply bg-[#fff] rounded-[50%] w-[20px] h-[20px] flex justify-center items-center text-[14px] cursor-pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.question__container {
+  @apply h-[20px];
+}
+
+.question__container:hover .answer__wrapper {
+  @apply block;
+}
+
+.subtitle {
+  @apply text-gray-light text-[14px] uppercase mb-[40px] !important;
+}
+
+.subtitle__two {
+  @apply text-gray-light text-[14px] uppercase mb-[20px] !important;
+}
+
+.telephone {
+  @apply text-[30px] mb-[10px] !important;
+}
+
+.address {
+  @apply mb-[40px] !important;
+}
+
+.social__wrapper {
+  @apply flex gap-[20px];
+}
+
+
+@media screen and (max-width:1060px) {
+  .sub__container {
+    @apply justify-center;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  @apply bg-gray;
+}
+
+.container {
+  @apply max-w-[1210px] w-full mx-auto py-[20px] flex flex-wrap justify-between items-center gap-[30px] px-[15px];
+}
+
+.logo {
+  @apply flex justify-center;
+}
+
+
+@media screen and (max-width: 885px) {
+  .logo {
+    @apply w-full;
+  }
+}

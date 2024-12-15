@@ -1,0 +1,12 @@
+.wrapper__text {
+  @apply border-b border-[#808080] pb-[10px];
+}
+
+.text {
+  @apply text-[#808080];
+}
+
+.title {
+  @apply mb-[20px];
+  font-family: 'Intro-Bold', sans-serif;
+}

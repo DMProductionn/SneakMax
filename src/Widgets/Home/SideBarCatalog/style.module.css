@@ -1,0 +1,22 @@
+.container {
+  @apply max-w-[280px] z-[99] w-full p-[20px] max-h-[660px] bg-brown-light rounded-[4px] transition-all duration-300;
+  font-family: 'Intro-Book', sans-serif;
+}
+
+.container.active {
+  @apply left-0 top-[50px];
+}
+
+.title {
+  @apply text-[24px] mb-[20px] !important;
+}
+
+.buttons {
+  @apply flex flex-col gap-[20px];
+}
+
+@media screen and (max-width: 910px) {
+  .container {
+    @apply -left-[400px] top-[50px] absolute;
+  }
+}

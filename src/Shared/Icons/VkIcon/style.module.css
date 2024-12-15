@@ -1,0 +1,3 @@
+.wrapper {
+  @apply bg-[#0E5A4C] rounded-[50%] w-[45px] h-[45px] flex items-center justify-center cursor-pointer;
+}

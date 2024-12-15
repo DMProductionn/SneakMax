@@ -1,0 +1,7 @@
+.button {
+  @apply bg-red flex justify-center items-center w-[200px] h-[60px] rounded-[4px] text-[#fff] transition-colors;
+}
+
+.button:hover {
+  @apply bg-[#CC4949];
+}

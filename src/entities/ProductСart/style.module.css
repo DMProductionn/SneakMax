@@ -1,0 +1,31 @@
+.product {
+  @apply flex justify-between items-center px-[20px] h-[120px] py-[20px] transition-colors;
+}
+
+.product:hover {
+  background: rgba(204, 217, 242, 0.2);
+}
+
+.product__wrapper {
+  @apply flex items-center gap-[10px];
+}
+
+.img__wrapper {
+  @apply w-[100px] h-[60px] overflow-auto;
+}
+
+.img {
+  @apply w-full h-full object-cover;
+}
+
+.product__info {
+  @apply flex flex-col gap-[10px];
+}
+
+.title {
+  @apply max-w-[260px] w-full text-[#4D4D4D] text-[14px];
+}
+
+.price {
+  @apply text-[20px] font-bold;
+}

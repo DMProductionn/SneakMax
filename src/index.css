@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Intro-Bold';
+  src: url('./App/Fonts/Intro-bold/intro-bold.eot'); /* IE9 Compat Modes */
+  src: url('./App/Fonts/intro-bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./App/Fonts/intro-bold.otf') format('opentype'),
+    /* Open Type Font */ url('./App/Fonts/intro-bold.svg') format('svg'),
+    /* Legacy iOS */ url('./App/Fonts/intro-bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('./App/Fonts/intro-bold.woff') format('woff'),
+    /* Modern Browsers */ url('./App/Fonts/intro-bold.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intro-Book';
+  src: local('Intro Book'), local('Intro-Book'), url('./App/Fonts/Intro-Book.woff2') format('woff2'),
+    url('./App/Fonts/Intro-Book.woff') format('woff'),
+    url('./App/Fonts/Intro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intro-Regular';
+  src: url('./App/Fonts/intro-regular.eot'); /* IE9 Compat Modes */
+  src: url('./App/Fonts/intro-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./App/Fonts/intro-regular.otf') format('opentype'),
+    /* Open Type Font */ url('./App/Fonts/intro-regular.svg') format('svg'),
+    /* Legacy iOS */ url('./App/Fonts/intro-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('./App/Fonts/intro-regular.woff') format('woff'),
+    /* Modern Browsers */ url('./App/Fonts/intro-regular.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

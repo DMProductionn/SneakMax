@@ -1,0 +1,20 @@
+.burger {
+ @apply flex absolute z-[999] flex-col gap-[5px] cursor-pointer;
+}
+
+.burger span {
+  @apply bg-[#fff] h-[2px] w-[30px];
+  transition: all 0.3s ease-in-out;
+}
+
+.burger .span__active:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger .span__active:nth-child(2) {
+  opacity: 0;
+}
+
+.burger .span__active:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

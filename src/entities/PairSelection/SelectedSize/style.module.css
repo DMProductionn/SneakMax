@@ -1,0 +1,65 @@
+.wrapper.active {
+  @apply opacity-100 transition-opacity;
+}
+
+.wrapper {
+  @apply opacity-0 transition-opacity;
+}
+
+.title {
+  @apply text-gray mb-[40px] mt-[20px] text-[24px] !important;
+  font-family: 'Intro-Book', sans-serif;
+}
+
+.sizes__wrapper {
+  @apply flex flex-wrap gap-x-[70px] gap-y-[20px];
+}
+
+.label {
+  @apply flex items-center gap-[10px];
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.custom__checkbox {
+  width: 20px;
+  height: 20px;
+  @apply bg-transparent border-[2px] rounded-[4px] border-brown;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.custom__checkbox:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  @apply border-brown;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0; 
+}
+
+
+input[type="checkbox"]:checked + .custom__checkbox:after {
+  opacity: 1; 
+}
+
+.size__text_wrapper {
+  @apply flex gap-[10px]; 
+}
+
+.textarea {
+  @apply w-[37px] h-[24px] text-center align-middle resize-none outline-none rounded-[4px] bg-transparent border-[2px] border-brown overflow-hidden;
+}
+
+.img__block {
+  background-image: url('../../../../public/img/Others/Photo/SelectedSizePhoto.png');
+  @apply w-full h-[280px] mt-[20px];
+}

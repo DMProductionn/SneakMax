@@ -1,0 +1,34 @@
+.section {
+  @apply flex flex-wrap gap-[40px] justify-between px-[15px];
+}
+
+.logo__wrapper {
+  @apply flex justify-center;
+}
+
+.logo {
+  @apply mb-[40px] !important;
+}
+
+.images__container {
+  @apply flex gap-[20px];
+}
+
+.images__wrapper {
+  @apply flex flex-col gap-[15px];
+}
+
+.image__big {
+  @apply h-full;
+}
+
+.error__message {
+  @apply text-red; 
+}
+
+@media screen and (max-width:1160px) {
+  .section {
+    @apply justify-center;
+  }
+}
+

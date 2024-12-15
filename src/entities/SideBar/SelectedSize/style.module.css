@@ -1,0 +1,27 @@
+.title {
+  @apply mb-[10px];
+}
+
+.sizes__wrapper {
+  @apply flex flex-wrap border-t-0 border-b-0 rounded-[4px] mb-[20px];
+}
+
+.sizes {
+  @apply flex;
+}
+
+.size {
+  @apply w-[80px] h-[60px] flex justify-center items-center border-brown border cursor-pointer transition-all;
+}
+
+.size:hover {
+  @apply bg-gray text-[#fff] border-none;
+}
+
+.size.active {
+  @apply bg-gray text-[#fff] border-none;
+}
+
+.size:hover p {
+  @apply text-[#fff];
+}

@@ -1,0 +1,39 @@
+.form {
+  @apply bg-brown text-[#fff] p-[40px] flex flex-col max-w-[655px] w-full;
+}
+
+.subtitle {
+  @apply text-[36px] mb-[10px];
+  font-family: 'Intro-Bold', sans-serif;
+}
+
+.subtext {
+  @apply text-[18px] mb-[10px] !important;
+}
+
+.input {
+  @apply max-w-[500px] w-full h-[60px] pl-[20px] outline-none text-gray-light;
+}
+
+.input::placeholder {
+  @apply text-gray-light;
+}
+
+.input__name {
+  @apply mb-[10px];
+}
+
+.button {
+  @apply bg-red max-w-[220px] w-full h-[60px] rounded-[4px] mt-[20px] transition-colors;
+}
+
+.button:hover {
+  @apply bg-[#CC4949];
+}
+
+
+@media screen and (max-width: 420px) {
+  .subtitle {
+    @apply text-[30px] mb-[5px] !important;
+  }
+}

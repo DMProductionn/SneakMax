@@ -1,0 +1,15 @@
+.container {
+  @apply border-t border-[#808080] pt-[20px] gap-[20px] mt-[40px] flex justify-between items-center;
+}
+
+.button {
+  @apply border border-gray rounded-[4px] max-w-[210px] w-full h-[50px] transition-colors;
+}
+
+.button:hover {
+  @apply bg-gray text-[#fff];
+}
+
+.text {
+  @apply text-[#808080] text-nowrap;
+}

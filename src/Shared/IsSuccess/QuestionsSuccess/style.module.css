@@ -1,0 +1,8 @@
+.wrapper {
+  @apply flex justify-center items-center h-full;
+}
+
+
+.title {
+  @apply text-center text-[20px];
+}

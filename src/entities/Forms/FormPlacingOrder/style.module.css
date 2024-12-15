@@ -1,0 +1,11 @@
+.form {
+  @apply mt-[40px] flex flex-col gap-[10px];
+}
+
+.input {
+  @apply bg-[#F6F6F6] text-gray-light h-[60px] pl-[20px] rounded-[4px] outline-none;
+}
+
+.error__message {
+  @apply text-red;
+}

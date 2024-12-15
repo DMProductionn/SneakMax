@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex justify-center gap-[20px] items-center flex-col;
+}
+
+.title {
+  @apply text-[24px];
+}
